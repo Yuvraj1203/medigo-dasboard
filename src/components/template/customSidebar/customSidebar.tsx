@@ -5,7 +5,6 @@ import {
   SidebarContent,
   SidebarFooter,
   SidebarGroup,
-  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
@@ -13,54 +12,54 @@ import {
 } from "@/components/ui/sidebar";
 
 import { Routes } from "@/navigation/routes";
-import { Boxes, ChartColumn, FileText, Home, LayoutDashboard, Package, Settings, ShoppingBag, Truck, Users } from "lucide-react";
+import { AppIcons } from "@/public";
 import Link from "next/link";
 
 const menuItems = [
   {
     title: "Dashboard",
     url: Routes.protected.dashboard.path,
-    icon: LayoutDashboard,
+    icon: AppIcons.LayoutDashboard,
   },
   {
     title: "Orders",
     url: Routes.protected.orders.path,
-    icon: ShoppingBag,
+    icon: AppIcons.ShoppingBag,
   },
   {
-    title: "Prescription Review",
+    title: "Prescription",
     url: Routes.protected.prescriptions.path,
-    icon: FileText,
+    icon: AppIcons.FileText,
   },
   {
     title: "Products",
     url: Routes.protected.products.path,
-    icon: Package,
+    icon: AppIcons.Package,
   },
   {
     title: "Inventory",
     url: Routes.protected.inventory.path,
-    icon: Boxes,
+    icon: AppIcons.Boxes,
   },
   {
     title: "Riders",
     url: Routes.protected.riders.path,
-    icon: Truck,
+    icon: AppIcons.Truck,
   },
   {
     title: "Users",
     url: Routes.protected.users.path,
-    icon: Users,
+    icon: AppIcons.Users,
   },
   {
     title: "Analytics",
     url: Routes.protected.analytics.path,
-    icon: ChartColumn,
+    icon: AppIcons.ChartColumn,
   },
   {
     title: "Settings",
     url: Routes.protected.settings.path,
-    icon: Settings,
+    icon: AppIcons.Settings,
   },
 ];
 
@@ -75,7 +74,7 @@ export function CustomSidebar() {
       {/* Content */}
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+          {/* <SidebarGroupLabel>Navigation</SidebarGroupLabel> */}
 
           <SidebarMenu>
             {menuItems.map((item) => (

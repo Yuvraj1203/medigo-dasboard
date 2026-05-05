@@ -1,0 +1,25 @@
+import {
+  Boxes,
+  ChartColumn,
+  FileText,
+  Home,
+  LayoutDashboard,
+  Package,
+  Settings,
+  ShoppingBag,
+  Truck,
+  Users,
+} from "lucide-react";
+
+export const AppIcons = {
+  Boxes: Boxes,
+  ChartColumn: ChartColumn,
+  FileText: FileText,
+  Home: Home,
+  LayoutDashboard: LayoutDashboard,
+  Package: Package,
+  Settings: Settings,
+  ShoppingBag: ShoppingBag,
+  Truck: Truck,
+  Users: Users,
+};

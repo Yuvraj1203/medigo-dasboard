@@ -7,7 +7,7 @@ const ProtectedLayout = ({ children }: LayoutTypes) => {
     <SidebarProvider>
       <div className="flex">
         <CustomSidebar />
-        <Header />
+        {/* <Header /> */}
         <main className="flex-1 p-4">{children}</main>
       </div>
     </SidebarProvider>
