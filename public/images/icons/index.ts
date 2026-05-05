@@ -7,6 +7,7 @@ import {
   LayoutDashboard,
   Logs,
   Package,
+  Search,
   Settings,
   ShoppingBag,
   Truck,
@@ -26,4 +27,5 @@ export const AppIcons = {
   Users: Users,
   Cross: Cross,
   Logs: Logs,
+  Search: Search,
 };
