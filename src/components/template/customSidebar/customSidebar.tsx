@@ -67,8 +67,18 @@ export function CustomSidebar() {
   return (
     <Sidebar variant="sidebar" collapsible="icon">
       {/* Header */}
-      <SidebarHeader className="text-lg font-semibold px-4 py-2">
-        My App
+      <SidebarHeader className="flex-row gap-2.5 h-16 border-b border-sidebar-border items-center text-lg font-semibold px-4 py-1">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-sm">
+          <AppIcons.Cross size={20} />
+        </span>
+        <div className="flex flex-col justify-between overflow-hidden">
+          <div className="text-sm font-semibold leading-tight text-nowrap">
+            MediGo
+          </div>
+          <div className="text-[11px] text-muted-foreground leading-tight text-nowrap">
+            Quick Pharmacy Ops
+          </div>
+        </div>
       </SidebarHeader>
 
       {/* Content */}

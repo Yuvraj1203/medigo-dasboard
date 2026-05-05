@@ -1,6 +1,7 @@
 import {
   Boxes,
   ChartColumn,
+  Cross,
   FileText,
   Home,
   LayoutDashboard,
@@ -22,4 +23,5 @@ export const AppIcons = {
   ShoppingBag: ShoppingBag,
   Truck: Truck,
   Users: Users,
+  Cross: Cross,
 };

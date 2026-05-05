@@ -1,14 +1,16 @@
-import { CustomSidebar } from "@/components/template";
+import { CustomSidebar, Header } from "@/components/template";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { LayoutTypes } from "@/types";
 
 const ProtectedLayout = ({ children }: LayoutTypes) => {
   return (
-    <SidebarProvider>
-      <div className="flex">
+    <SidebarProvider className="">
+      <div className="flex w-dvw">
         <CustomSidebar />
-        {/* <Header /> */}
-        <main className="flex-1 p-4">{children}</main>
+        <div className="w-full">
+          <Header />
+          <main className="flex-1 p-4">{children}</main>
+        </div>
       </div>
     </SidebarProvider>
   );

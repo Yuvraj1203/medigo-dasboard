@@ -1,12 +1,9 @@
-import React from 'react'
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
-const Header = () => {
+export const Header = () => {
   return (
-    <header>
-        
-        <h1 className="text-2xl font-bold">Dashboard</h1>
+    <header className="flex items-center gap-2.5 h-16 border-b border-sidebar-border items-centerpx-4 py-1">
+      <SidebarTrigger />
     </header>
-  )
-}
-
-export default Header
+  );
+};
