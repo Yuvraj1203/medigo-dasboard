@@ -9,11 +9,13 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  useSidebar,
 } from "@/components/ui/sidebar";
 
 import { Routes } from "@/navigation/routes";
 import { AppIcons } from "@/public";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const menuItems = [
   {
@@ -64,6 +66,9 @@ const menuItems = [
 ];
 
 export function CustomSidebar() {
+  const { state } = useSidebar();
+  const pathname = usePathname();
+
   return (
     <Sidebar variant="sidebar" collapsible="icon">
       {/* Header */}
@@ -89,7 +94,14 @@ export function CustomSidebar() {
           <SidebarMenu>
             {menuItems.map((item) => (
               <SidebarMenuItem key={item.title}>
-                <SidebarMenuButton asChild>
+                <SidebarMenuButton
+                  className={`${
+                    pathname.startsWith(item.url)
+                      ? "bg-sidebar-accent hover:text-sidebar-accent-foreground border-l-2"
+                      : "border-l-2 border-sidebar-accent"
+                  } duration-250`}
+                  asChild
+                >
                   <Link href={item.url}>
                     <item.icon className="h-4 w-4" />
                     <span>{item.title}</span>

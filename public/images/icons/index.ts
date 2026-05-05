@@ -5,6 +5,7 @@ import {
   FileText,
   Home,
   LayoutDashboard,
+  Logs,
   Package,
   Settings,
   ShoppingBag,
@@ -24,4 +25,5 @@ export const AppIcons = {
   Truck: Truck,
   Users: Users,
   Cross: Cross,
+  Logs: Logs,
 };
