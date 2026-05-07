@@ -91,9 +91,12 @@ export function CustomSidebar() {
         <SidebarGroup>
           {/* <SidebarGroupLabel>Navigation</SidebarGroupLabel> */}
 
-          <SidebarMenu>
+          <SidebarMenu className="gap-2">
             {menuItems.map((item) => (
-              <SidebarMenuItem key={item.title}>
+              <SidebarMenuItem
+                className="duration-250 hover:scale-110"
+                key={item.title}
+              >
                 <SidebarMenuButton
                   className={`${
                     pathname.startsWith(item.url)
