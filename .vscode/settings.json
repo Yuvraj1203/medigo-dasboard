@@ -1,5 +1,9 @@
 {
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
-  }
+  },
+
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.localesPaths": ["src//i18n/translations"],
+  "i18n-ally.enabledFrameworks": ["next-intl"]
 }
