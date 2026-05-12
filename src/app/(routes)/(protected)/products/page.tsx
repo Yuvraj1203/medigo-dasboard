@@ -1,7 +1,8 @@
-import { Download, Plus } from "lucide-react";
+import { Download } from "lucide-react";
 
 import { Screen } from "@/components/template";
 import { Button } from "@/components/ui/button";
+import AddProduct from "./(components)/addProduct";
 
 const ProductsPage = () => {
   return (
@@ -20,12 +21,7 @@ const ProductsPage = () => {
         },
         {
           id: "add",
-          element: (
-            <Button className="w-full sm:w-auto">
-              <Plus className="mr-2 h-4 w-4" />
-              Add Product
-            </Button>
-          ),
+          element: <AddProduct />,
         },
       ]}
     >
