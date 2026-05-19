@@ -1,15 +1,5 @@
 import z from "zod";
 
-enum MedicineEnum {
-  TABLET = "tablet",
-  SYRUP = "syrup",
-  INJECTION = "injection",
-  CAPSULE = "capsule",
-  DROPS = "drops",
-  OINTMENT = "ointment",
-  POWDER = "powder",
-}
-
 export const addProductSchema = z.object({
   name: z.string().min(1, { message: "Product name is required" }),
   generic_name: z.string(),

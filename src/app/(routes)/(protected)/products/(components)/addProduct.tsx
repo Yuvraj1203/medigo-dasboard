@@ -1,8 +1,10 @@
 import { CustomButton, CustomModal } from "@/components/custom";
 import { useTranslations } from "next-intl";
+import AddProductModal from "./addProductModal";
 
 const AddProduct = () => {
   const t = useTranslations();
+
   return (
     <CustomModal
       title={t("NewProduct")}
@@ -14,7 +16,7 @@ const AddProduct = () => {
       actionButton={
         <CustomButton className="w-full sm:w-auto">{t("Save")}</CustomButton>
       }
-      children={<form>hi</form>}
+      children={<AddProductModal />}
     />
   );
 };
